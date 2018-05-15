@@ -2,7 +2,7 @@
     <div>
         <!-- <keep-alive exclude="detail"> -->
         <keep-alive>
-            <router-view></router-view>
+            <router-view v-wechat-title="this.$route.meta.title"></router-view>
         </keep-alive>
     </div>
 </template>

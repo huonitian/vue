@@ -10,17 +10,26 @@ export default new Router({
     routes: [{
             path: '/',
             name: 'home',
-            component: Home
+            component: Home,
+            meta: {
+                title: '首页'
+            }
         },
         {
             path: '/city',
             name: 'city',
-            component: City
+            component: City,
+            meta: {
+                title: '列表'
+            }
         },
         {
             path: '/detail/:id',
             name: 'detail',
-            component: Detail
+            component: Detail,
+            meta: {
+                title: '详情'
+            }
         }
     ],
     scrollBehavior(to, from, savedPosition) {

@@ -3,6 +3,7 @@ import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import VueWechatTitle from 'vue-wechat-title'
 import 'babel-polyfill'
 import store from './store'
 
@@ -15,6 +16,7 @@ import 'styles/iconfont.css'
 Vue.config.productionTip = false
 fastClick.attach(document.body);
 Vue.use(VueAwesomeSwiper)
+Vue.use(VueWechatTitle)
 
 /* eslint-disable no-new */
 new Vue({
